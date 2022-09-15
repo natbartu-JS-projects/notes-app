@@ -36,3 +36,10 @@ body {
   height: 400px;
   width: 400px;
 }
+
+.note .tools {
+  background-color: rgb(143, 170, 149, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
