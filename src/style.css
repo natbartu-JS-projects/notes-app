@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+:root {
+ --dark: #565555;
+ --light-background: aliceblue;
+}
 
 * {
   box-sizing: border-box;
@@ -11,4 +15,16 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding-top: 3rem;
+}
+
+.add {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--light-background);
+  color: var(--dark);
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
 }
