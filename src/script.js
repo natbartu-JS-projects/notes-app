@@ -28,12 +28,9 @@ function addNewNote(text = "") {
 
   textArea.value = text;
 
-  const marked = (text) => {
-    main.innerHTML;
-  };
-
   deleteBtn.addEventListener("click", () => {
     note.remove();
+    updateLS();
   });
 
   editBtn.addEventListener("click", () => {
@@ -43,7 +40,9 @@ function addNewNote(text = "") {
 
   textArea.addEventListener("input", (e) => {
     const { value } = e.target;
-    main.innerHTML = marked(value);
+    console.log(value);
+    main.innerHTML = marked.parse(value);
+    updateLS();
   });
 
   document.body.appendChild(note);
