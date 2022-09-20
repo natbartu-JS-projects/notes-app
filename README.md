@@ -1,5 +1,7 @@
 # About
 
-This app is about to create notes and implemented markdown as an editor. Also, it has local storage to keep the notes on the browser.
+This app is about to create notes and implemented markdown as an editor. Also, it has local storage to keep the notes updated on the browser.
 
-## Application Preview
+## Application 
+
+![gif-preview](assets/notes-app.gif)
