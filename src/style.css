@@ -6,6 +6,7 @@
 
 * {
   box-sizing: border-box;
+  outline: none;
 }
 
 body {
@@ -29,12 +30,17 @@ body {
   cursor: pointer;
 }
 
+.add:active {
+  transform: scale(0.98);
+}
+
 .note {
   background-color: var(--light-background);
   box-shadow: 0 0 10px 4px rgba(0,0,0,0.1);
-  margin: 20px 10px 0 20px;
+  margin: 30px 20px;
   height: 400px;
   width: 400px;
+  overflow-y: scroll ;
 }
 
 .note .tools {
@@ -54,15 +60,19 @@ body {
 }
 
 .note textarea {
-   outline: none;
-   font-family: inherit;
-   font-size: 1.2rem;
-   border: none;
-   height: 400px;
-   width: 100%;
-   padding: 20px;
+  outline: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  border: none;
+  height: 400px;
+  width: 100%;
+  padding: 20px;
 }
 
 .hidden {
   display: none;
+}
+
+.main {
+  padding: 20px;
 }
